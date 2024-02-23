@@ -1,0 +1,8 @@
+/* main about */
+.about {
+  width: calc(100% - 32%);
+  height: 100%;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+}

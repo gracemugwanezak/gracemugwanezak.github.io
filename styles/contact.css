@@ -1,0 +1,65 @@
+.profile__white__about {
+  /* height: 100%; */
+  background-color: rgb(58, 154, 122);
+}
+.about__page {
+  margin-top: 5%;
+  height: 55%;
+}
+.aboutme_div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.phone__email {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+.phone__email div {
+  background-color: #e9d7ff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: start;
+}
+.my_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #e9d7ff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.my_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.my_form form input {
+  width: 80%;
+  height: 1.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #0d0c22;
+  padding-left: 0.5rem;
+  background-color: transparent;
+}
+.my_form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.my_form button {
+  padding: 1rem 0;
+  background-color: #f5f5f5;
+  width: 50%;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+#messageContainer {
+  display: none;
+  background-color: #e9d7ff;
+  color: gray;
+}

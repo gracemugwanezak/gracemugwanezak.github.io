@@ -1,0 +1,50 @@
+.sidebar {
+  width: 30%;
+  height: 100%;
+
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+.sidebar .profile__container {
+  position: relative;
+  width: 95%;
+  background-color: whitesmoke;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+}
+.sidebar .profile__container .profile__pic {
+  position: absolute;
+  top: -8%;
+}
+.sidebar .profile__container .profile__pic img {
+  width: 100%;
+  min-width: 155px;
+  height: 150px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.profile__names__contact__container {
+  margin-top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+hr {
+  color: whitesmoke;
+  background-color: whitesmoke;
+}
+.sidebar .contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: #e9d7ff;
+  gap: 2rem;
+  border-radius: 0.5rem;
+}

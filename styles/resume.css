@@ -1,0 +1,43 @@
+.about {
+  height: 80%;
+}
+.experience__container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.experience__container h1 {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.wrapper > div {
+  background-color: #e9d7ff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.wrapper > div > h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.education__wrapper {
+  flex: 2 1 300px;
+}
+.experience {
+  flex: 2 1 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (width < 720px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .main__container {
+    flex-direction: column;
+    margin-top: 15%;
+  }
+}

@@ -1,0 +1,21 @@
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  pad: 0.4rem;
+  background-color: #e9d7ff;
+  border-radius: 0.5rem;
+  /* align-items: center; */
+  box-shadow: 1px -1px 1px #0d90a4;
+}
