@@ -39,6 +39,40 @@ body {
 .main-board {
   grid-area: main-board;
 }
+.popup {
+  display: none;
+  flex-direction: column;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  width: 50%;
+  border-radius: 1rem;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  gap: 1rem;
+  top: 10%;
+  left: 25%;
+  transition: transform 0.6s;
+}
+.popup:hover {
+  transform: scale(1.1);
+}
+.popup div:last-child {
+  display: flex;
+  gap: 2rem;
+}
+
+.popup button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #e9d7ff;
+  border: none;
+  border-radius: 0.4rem;
+}
+.popup button:last-child {
+  background-color: brown;
+  color: #e9d7ff;
+}
 .main-board .dashboard__search {
   display: flex;
   width: 100%;

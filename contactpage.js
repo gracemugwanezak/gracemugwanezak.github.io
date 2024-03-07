@@ -9,7 +9,22 @@ function handleSubmit(event) {
 
   // Validate form fields
   if (!myName || !myEmail || !myMessage) {
-    alert("Please fill in all fields");
+
+  //  filling in fields
+function showMessage(message, duration) {
+  var messageContainer = document.getElementById("messageContainer");
+  messageContainer.textContent = message;
+  messageContainer.style.display = "block";
+
+  setTimeout(function () {
+    messageContainer.style.display = "none";
+  }, duration);
+}
+
+
+showMessage("please fill in all fields!", 2000);
+
+
     return;
   }
 
@@ -30,8 +45,21 @@ function handleSubmit(event) {
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
+// alerting submission
+function showMessage(message, duration) {
+  var messageContainer = document.getElementById("messageContainer");
+  messageContainer.textContent = message;
+  messageContainer.style.display = "block";
 
-  alert("Form submitted successfully!");
+  setTimeout(function () {
+    messageContainer.style.display = "none";
+  }, duration);
+}
+
+
+showMessage("form submitted successfully", 2000);
+
+
 }
 
 // Function to save data to local storage
@@ -51,8 +79,20 @@ function saveToLocalStorage(name, email, message) {
     // Save the updated data back to localStorage
     localStorage.setItem("formData", JSON.stringify(existingData));
   } else {
+
     // Local storage is not supported
-    alert("Local storage is not supported in your browser.");
+    function showMessage(message, duration) {
+      var messageContainer = document.getElementById("messageContainer");
+      messageContainer.textContent = message;
+      messageContainer.style.display = "block";
+
+      setTimeout(function () {
+        messageContainer.style.display = "none";
+      }, duration);
+    }
+
+  
+    showMessage("local storage not supported", 2000);
   }
 }
 
@@ -108,3 +148,6 @@ function deleteItem(index) {
 
 // Event listener for form submission
 document.getElementById("changes").addEventListener("submit", handleSubmit);
+
+
+

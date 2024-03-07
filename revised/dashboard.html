@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <script
+      src="https://kit.fontawesome.com/aff3b41f91.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+    <style></style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/dashboard.css" />
-  <script src="https://kit.fontawesome.com/aff3b41f91.js" crossorigin="anonymous"></script>
-  <title>Dashboard</title>
-</head>
-
-<body>
-  <div class="sidebar">
-    <div>
-      <span role="button"><a href="#">Portfolio</a></span>
-      <span role="button"><a href="#">Blogs</a></span>
-      <span role="button"><a href="#">Users</a></span>
-      <span role="button"><a href="#">Messages</a></span>
-      <span role="button"><a href="#">Skills</a></span>
-    </div>
-  </div>
-  <div class="main-board">
-    <div class="main_container">
-      <div class="dashboard__search">
-        <h2>Dashboard</h2>
-        <form action="">
-          <input type="search" placeholder="Search" name="search" />
-        </form>
+  <body>
+    <div class="sidebar">
+      <div>
+        <span role="button"><a href="#">Portfolio</a></span>
+        <span role="button"><a href="create.html">Blogs</a></span>
+        <span role="button"><a href="#">Users</a></span>
+        <span role="button"><a href="#">Messages</a></span>
+        <span role="button"><a href="#">Skills</a></span>
       </div>
-      <div class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio__container container">
-          <div>
-            <span>01</span>
-            <span>Portfolio Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+    </div>
+    <div class="main-board">
+      <div class="popup">
+        <div class="message">
+          <p>Are you sure you want to delete</p>
+        </div>
+        <div>
+          <button>Cancel</button>
+          <button>Delete</button>
+        </div>
+      </div>
+      <div class="main_container">
+        <div class="dashboard__search">
+          <h2>Dashboard</h2>
+          <form action="">
+            <input type="search" placeholder="Search" name="search" />
+          </form>
+        </div>
+        <div class="portfolio">
+          <h2>Portfolio</h2>
+          <div class="portfolio__container container">
+            <div>
+              <span>01</span>
+              <span>Portfolio Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <a href="update.html"
+                ><i class="fa-solid fa-pen-to-square"></i
+              ></a>
+            </div>
+            <div>
+              <span>01</span>
+              <span>Portfolio Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>01</span>
+              <span>portfolio Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>01</span>
+              <span>Portfolio Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
           </div>
-          <div>
-            <span>01</span>
-            <span>Portfolio Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div>
-            <span>01</span>
-            <span>portfolio Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div>
-            <span>01</span>
-            <span>Portfolio Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div class="blogs">
+          <h2>Blogs</h2>
+          <div class="blogs__container container">
+            <div>
+              <span>01</span>
+              <span>blog Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>01</span>
+              <span>blog Title</span>
+              <a href=""><i class="fa-solid fa-trash"></i></a>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>01</span>
+              <span>blog Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span>01</span>
+              <span>blog Title</span>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div class="blogs">
-        <h2>Blogs</h2>
-        <div class="blogs__container container">
-          <div>
-            <span>01</span>
-            <span>blog Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div>
-            <span>01</span>
-            <span>blog Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div>
-            <span>01</span>
-            <span>blog Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div>
-            <span>01</span>
-            <span>blog Title</span>
-            <i class="fa-solid fa-trash"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-        </div>
+    </div>
+    <div class="profile-settings">
+      <div class="profile">
+        <img src="./images/user.jpeg" alt="user" />
+        <span>User X</span>
+      </div>
+      <div class="logout">
+        <a href="index.html"
+          ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+        >
       </div>
     </div>
-  </div>
-  <div class="profile-settings">
-    <div class="profile">
-      <img src="./images/user.jpeg" alt="user" />
-      <span>User X</span>
-    </div>
-    <div class="logout">
-      <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-    </div>
-  </div>
-</body>
-
+    <script src="../script/addBlog.js"></script>
+  </body>
 </html>

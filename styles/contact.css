@@ -63,3 +63,8 @@
   background-color: #e9d7ff;
   color: gray;
 }
+  #messageContainer {
+      display: none;
+      color:#e9d7ff;
+      margin-bottom: 15px;
+    }
