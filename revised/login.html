@@ -1,101 +1,196 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" />
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/sidebar.css">
-    <link rel="stylesheet" href="../styles/main__container.css">
-    <link rel="stylesheet" href="../styles/right__section.css">
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/responsiveness.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/main__container.css" />
+    <link rel="stylesheet" href="../styles/right__section.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/responsiveness.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <img src="../logo_transparent.png" alt="logo" />
-
-        </div>
-        <ul>
-            <li>
-                <a href="../index.html"><object data="../svgs/home.svg" width="15"
-                        height="15"></object><span>Home</span></a>
-            </li>
-            <li>
-                <a href="resume.html"><object data="../svgs/resume.svg" width="15"
-                        height="15"></object><span>Resume</span></a>
-            </li>
-            <li>
-                <a href="portfolio.html"><object data="../svgs/work.svg" width="15"
-                        height="15"></object><span>Work</span></a>
-            </li>
-            <li>
-                <a href="contactPage.html"><object data="../svgs/contact.svg" width="15"
-                        height="15"></object><span>contact</span></a>
-            </li>
-        </ul>
+      <div class="logo">
+        <img src="../logo_transparent.png" alt="logo" />
+      </div>
+      <ul>
+        <li>
+          <a href="../index.html"
+            ><object data="../svgs/home.svg" width="15" height="15"></object
+            ><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a href="resume.html"
+            ><object data="../svgs/resume.svg" width="15" height="15"></object
+            ><span>Resume</span></a
+          >
+        </li>
+        <li>
+          <a href="portfolio.html"
+            ><object data="../svgs/work.svg" width="15" height="15"></object
+            ><span>Work</span></a
+          >
+        </li>
+        <li>
+          <a href="contactPage.html"
+            ><object data="../svgs/contact.svg" width="15" height="15"></object
+            ><span>contact</span></a
+          >
+        </li>
+      </ul>
     </nav>
     <!-- sideBar -->
     <div class="main__container about__page">
-        <div class="sidebar">
-            <div class="profile__container profile__white__about">
-                <div class="profile__pic about__me__page">
-                    <img src="../Mypp.jpg" alt="MG" />
-                </div>
-                <div class="profile__names__contact__container">
-                    <div class="names">
-                        <h2>MUGWANEZA Grace</h2>
-                        <p>Full stack Developer</p>
-                    </div>
-                    <div class="contacts">
-                        <div>
-                            <object data="../svgs/phone.svg" width="15" height="15" type=""></object>
-                            <span>+25078932961</span>
-                            <hr />
-                        </div>
-                        <div>
-                            <object data="../svgs/email.svg" width="15" height="15" type=""></object>
-                            <span>gracemugwaneza018@gmail.com</span>
-                            <hr />
-                        </div>
-                        <div>
-                            <object data="../svgs/location.svg" width="15" height="15" type=""></object>
-                            <span>Kigali, Rwanda</span>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
-                .
+      <div class="sidebar">
+        <div class="profile__container profile__white__about">
+          <div class="profile__pic about__me__page">
+            <img src="../Mypp.jpg" alt="MG" />
+          </div>
+          <div class="profile__names__contact__container">
+            <div class="names">
+              <h2>MUGWANEZA Grace</h2>
+              <p>Full stack Developer</p>
             </div>
+            <div class="contacts">
+              <div>
+                <object
+                  data="../svgs/phone.svg"
+                  width="15"
+                  height="15"
+                  type=""
+                ></object>
+                <span>+25078932961</span>
+                <hr />
+              </div>
+              <div>
+                <object
+                  data="../svgs/email.svg"
+                  width="15"
+                  height="15"
+                  type=""
+                ></object>
+                <span>gracemugwaneza018@gmail.com</span>
+                <hr />
+              </div>
+              <div>
+                <object
+                  data="../svgs/location.svg"
+                  width="15"
+                  height="15"
+                  type=""
+                ></object>
+                <span>Kigali, Rwanda</span>
+                <hr />
+              </div>
+            </div>
+          </div>
+          .
         </div>
-        <!-- main about-->
-        <section class="about">
-            <div class="login__container">
-                <h1>Login</h1>
+      </div>
+      <!-- main about-->
+      <section class="about">
+        <div class="login__container">
+          <h1>Login</h1>
 
-                <form action="">
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                    </div>
-                    <button type="submit">Login</button>
-                </form>
-
+          <div id="loginPopup" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <p id="popupMessage"></p>
             </div>
-        </section>
-    </div>
-    <script src="../login.js"></script>
-</body>
+          </div>
 
+          <form action="">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Function to reset the form inputs
+      function resetForm() {
+        document.getElementById("email").value = ""; // Reset email input
+        document.getElementById("password").value = ""; // Reset password input
+      }
+
+      // Function to handle popup display
+      function openPopup(message, color) {
+        const popup = document.getElementById("loginPopup");
+        const popupContent = popup.querySelector(".popup-content");
+
+        // Set styles
+        popup.style.display = "block";
+        popupContent.textContent = message;
+        popupContent.style.color = "#0d0c22";
+        popupContent.style.backgroundColor = "transparent";
+
+        // Pop up for 2 seconds
+        setTimeout(function () {
+          popup.style.display = "none";
+
+          // Redirect after closing the popup
+          const userData = JSON.parse(localStorage.getItem("userData"));
+          if (userData && userData.isAdmin) {
+            window.location.href = "dashboard.html";
+          } else {
+            window.location.href = "resume.html";
+          }
+
+          // Reset the form after submission
+          resetForm();
+        }, 2000);
+      }
+
+      const form = document.querySelector("form");
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const response = await fetch("http://localhost:4000/api/users/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+          }),
+        });
+
+        if (response.ok) {
+          const userData = await response.json();
+
+          if (userData && userData.isAdmin === true) {
+            openPopup("Admin Login successful!", "green");
+          } else if (userData) {
+            openPopup("Login successful!", "green");
+          } else {
+            openPopup("Invalid email or password. Please try again.", "red");
+          }
+        } else {
+          console.log("Login failed");
+          openPopup("Login failed. Please try again.", "red");
+        }
+      });
+    </script>
+  </body>
 </html>

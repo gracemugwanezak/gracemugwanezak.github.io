@@ -1,4 +1,6 @@
- // Function to handle form submission
+//  contactpage.js
+
+// Function to handle form submission
 function handleSubmit(event) {
   event.preventDefault(); // Prevent the form from submitting traditionally
 
@@ -9,21 +11,18 @@ function handleSubmit(event) {
 
   // Validate form fields
   if (!myName || !myEmail || !myMessage) {
+    //  filling in fields
+    function showMessage(message, duration) {
+      var messageContainer = document.getElementById("messageContainer");
+      messageContainer.textContent = message;
+      messageContainer.style.display = "block";
 
-  //  filling in fields
-function showMessage(message, duration) {
-  var messageContainer = document.getElementById("messageContainer");
-  messageContainer.textContent = message;
-  messageContainer.style.display = "block";
+      setTimeout(function () {
+        messageContainer.style.display = "none";
+      }, duration);
+    }
 
-  setTimeout(function () {
-    messageContainer.style.display = "none";
-  }, duration);
-}
-
-
-showMessage("please fill in all fields!", 2000);
-
+    showMessage("please fill in all fields!", 2000);
 
     return;
   }
@@ -45,21 +44,18 @@ showMessage("please fill in all fields!", 2000);
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
-// alerting submission
-function showMessage(message, duration) {
-  var messageContainer = document.getElementById("messageContainer");
-  messageContainer.textContent = message;
-  messageContainer.style.display = "block";
+  // alerting submission
+  function showMessage(message, duration) {
+    var messageContainer = document.getElementById("messageContainer");
+    messageContainer.textContent = message;
+    messageContainer.style.display = "block";
 
-  setTimeout(function () {
-    messageContainer.style.display = "none";
-  }, duration);
-}
+    setTimeout(function () {
+      messageContainer.style.display = "none";
+    }, duration);
+  }
 
-
-showMessage("form submitted successfully", 2000);
-
-
+  showMessage("form submitted successfully", 2000);
 }
 
 // Function to save data to local storage
@@ -79,7 +75,6 @@ function saveToLocalStorage(name, email, message) {
     // Save the updated data back to localStorage
     localStorage.setItem("formData", JSON.stringify(existingData));
   } else {
-
     // Local storage is not supported
     function showMessage(message, duration) {
       var messageContainer = document.getElementById("messageContainer");
@@ -91,7 +86,6 @@ function saveToLocalStorage(name, email, message) {
       }, duration);
     }
 
-  
     showMessage("local storage not supported", 2000);
   }
 }
@@ -148,6 +142,3 @@ function deleteItem(index) {
 
 // Event listener for form submission
 document.getElementById("changes").addEventListener("submit", handleSubmit);
-
-
-

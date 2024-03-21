@@ -1,38 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("changes")
-    .addEventListener("submit", handleFormSubmit);
-});
+// signup.js
 
-function handleFormSubmit(event) {
-  event.preventDefault();
+document
+  .getElementById("signupForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  var myName = document.getElementById("name").value;
-  var myEmail = document.getElementById("email").value;
-  var ypassword = document.getElementById("password").value;
-  var yconfirmPassword = document.getElementById("verifypassword").value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password1 = document.getElementById("password1").value;
 
-  if (!myName || !myEmail || !ypassword || !yconfirmPassword) {
-    alert("Please fill in all fields.");
-    return;
-  }
+    // Perform client-side validation if needed
 
-  if (ypassword !== yconfirmPassword) {
-    alert("Passwords do not match. Please try again.");
-    return;
-  }
-  // If validations pass, store data in local storage
-  addUser(myName, myEmail, ypassword);
+    // Create a data object to send with the POST request
+    var formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("password1", password1);
 
-  // You can redirect to another page or perform other actions after successful form submission
-  alert("Signup successful!");
-  // Redirect to login page or any other desired action
-  window.location.href = "index.html";
-}
-
-// Function to add a user to local storage
-function addUser(name, email, password) {
-  var users = JSON.parse(localStorage.getItem("users")) || [];
-  users.push({ myName: name, myEmail: email, ypassword: password });
-  localStorage.setItem("users", JSON.stringify(users));
-}
+    // Send the POST request
+    fetch("http://localhost:4000/api/users/signup", {
+      method: "POST",
+      body: formData,
+    })
+      .then(function (response) {
+        if (response.ok) {
+          // Redirect or display success message
+          alert("Signup successful!");
+          window.location.href = "index.html";
+        } else {
+          // Handle errors
+          alert("An error occurred. Please try again.");
+        }
+      })
+      .catch(function (error) {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again.");
+      });
+  });
