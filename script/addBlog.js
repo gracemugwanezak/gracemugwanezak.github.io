@@ -44,12 +44,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-/*
-div>
-              <span>01</span>
-              <span>blog Title</span>
-              <i class="fa-solid fa-trash"></i>
-              <i class="fa-solid fa-pen-to-square"></i>
-            </div>
-            */

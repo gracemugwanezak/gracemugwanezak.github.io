@@ -1,11 +1,18 @@
-var blogs = document.querySelector(".blogs");
+var blogs = document.querySelector(".portfolio__container");
 function displayBlogs(response) {
   var blogsHTML = ""; // Initialize an empty string to store HTML
   for (var i = 0; i < response.data.blogs.length; i++) {
     // Concatenate HTML for each blog
     const BlogDiv = document.createElement("div");
-    BlogDiv.innerHTML = `              <span>0${i + 1}</span>
-              <span>${response.data.blogs[i].blogName}</span>
+    BlogDiv.innerHTML = `
+  
+      <div class="wrapper">
+              <div>
+              <h2>${response.data.blogs[i].blogName}</h2>
+              <img src="./images/portfolio/image1.jpg" alt="image 1" />
+              <p>${response.data.blogs[i].blogDescription}</p>
+               </div>
+                 
               <a href=""><i class="fa-solid fa-trash"></i></a>
               <i class="fa-solid fa-pen-to-square"></i>`;
     blogs.append(BlogDiv);
@@ -13,11 +20,12 @@ function displayBlogs(response) {
 }
 
 axios
-  .get("http://localhost:4000/api/blogs")
+  .get("https://brand-backend-nrbf.onrender.com/api/blogs")
   .then(displayBlogs)
   .catch((error) => {
     console.error("Error fetching blogs:", error);
   });
+
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZjA2NTM0M2RiY2FkZTI2YzRhYzA3ZiIsImlhdCI6MTcxMDUxOTA1NSwiZXhwIjoxNzEzMTExMDU1fQ.5Su6WcC0_moyXg66-RCExjguNcrwGXr-H7AHkxM0W8Y";
 

@@ -5,14 +5,14 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var password1 = document.getElementById("password1").value;
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password1 = document.getElementById("password1").value;
 
     // Perform client-side validation if needed
 
     // Create a data object to send with the POST request
-    var formData = new FormData();
+    let formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
     formData.append("password1", password1);
@@ -26,6 +26,7 @@ document
         if (response.ok) {
           // Redirect or display success message
           alert("Signup successful!");
+
           window.location.href = "index.html";
         } else {
           // Handle errors
