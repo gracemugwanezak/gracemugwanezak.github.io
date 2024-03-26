@@ -1,0 +1,86 @@
+/* dashboard.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+
+.main-board {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.dashboard__search {
+  margin-bottom: 20px;
+}
+
+.message-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#messageTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#messageTable th,
+#messageTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#messageTable th {
+  background-color: #f2f2f2;
+}
+
+.profile-settings {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background-color: #333;
+  color: white;
+}
+
+.profile {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logout {
+  padding: 10px;
+}
+
+.logout a {
+  color: white;
+  text-decoration: none;
+}
