@@ -1,0 +1,30 @@
+/* Original table styles */
+table {
+  background-color: #e9d7ff;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #d8bfd8;
+}
+
+tr:hover {
+  background-color: #d1c4ff;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 6px; /* Adjust padding for smaller screens */
+  }
+}
